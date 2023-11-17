@@ -1,14 +1,20 @@
-import {Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { useState } from 'react';
+import {Container, Navbar, Nav, NavDropdown, Button, Offcanvas } from 'react-bootstrap';
 import { CiSearch,CiHeart,CiShoppingCart } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 
 
 function NavBar(){
-  // const navColor = {backgroundColor: 'white'}
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
     return(
       <Container>
       <Navbar bg="white" data-bs-theme="white">
-        <Navbar.Brand href="#home">HyundaiCertified</Navbar.Brand>
+        <Navbar.Brand href="#home" className='logo'>HyundaiCertified</Navbar.Brand>
+        <Button onClick={handleShow} className='d-block d-md-none'>
+            <span class="navbar-toggler-icon"></span>
+          </Button>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -27,15 +33,29 @@ function NavBar(){
             </NavDropdown>
             <Nav.Link href="#home">내차사기</Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-        <CiSearch />
-        <CiHeart />
-        <CiShoppingCart />
-        <IoPersonOutline />
 
+          <Offcanvas show={show} onHide={handleClose} >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              Some text as placeholder. In real life you can have the elements you
+              have chosen. Like, text, images, lists, etc.
+            </Offcanvas.Body>
+          </Offcanvas>
+        </Navbar.Collapse>
+        
+        <div className='d-flex gap-3'>
+        <a href='#' className='icons text-dark'><CiSearch /></a>
+        <a href='#' className='icons text-dark'><CiHeart /></a>
+        <a href='#' className='icons text-dark'><CiShoppingCart /></a>
+        <a href='#' className='icons text-dark'><IoPersonOutline /></a>
+        </div>
     </Navbar>
       </Container>
   );
 }
+
+
 
 export default NavBar;
