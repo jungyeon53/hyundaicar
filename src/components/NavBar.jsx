@@ -10,11 +10,10 @@ function NavBar(){
   const handleClose = () => setShow(false);
     return(
       <Container>
-      <Navbar bg="white" data-bs-theme="white">
+      <Navbar expand="lg" bg="white" data-bs-theme="white">
         <Navbar.Brand href="#home" className='logo'>HyundaiCertified</Navbar.Brand>
-        <Button onClick={handleShow} className='d-block d-md-none'>
-            <span class="navbar-toggler-icon"></span>
-          </Button>
+
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -33,8 +32,14 @@ function NavBar(){
             </NavDropdown>
             <Nav.Link href="#home">내차사기</Nav.Link>
           </Nav>
+          {/* <div className='d-flex gap-3 me-auto'>
+        <a href='#' className='icons text-dark'><CiSearch /></a>
+        <a href='#' className='icons text-dark'><CiHeart /></a>
+        <a href='#' className='icons text-dark'><CiShoppingCart /></a>
+        <a href='#' className='icons text-dark'><IoPersonOutline /></a>
+        </div> */}
 
-          <Offcanvas show={show} onHide={handleClose} >
+          <Offcanvas show={show} onHide={handleClose} className='ms-auto'>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>Offcanvas</Offcanvas.Title>
             </Offcanvas.Header>
@@ -44,13 +49,11 @@ function NavBar(){
             </Offcanvas.Body>
           </Offcanvas>
         </Navbar.Collapse>
+
+    
         
-        <div className='d-flex gap-3'>
-        <a href='#' className='icons text-dark'><CiSearch /></a>
-        <a href='#' className='icons text-dark'><CiHeart /></a>
-        <a href='#' className='icons text-dark'><CiShoppingCart /></a>
-        <a href='#' className='icons text-dark'><IoPersonOutline /></a>
-        </div>
+
+        
     </Navbar>
       </Container>
   );

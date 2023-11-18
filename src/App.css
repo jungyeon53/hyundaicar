@@ -2,4 +2,28 @@
   font-size: 1.5em;
   
 }
+/* swiper */
+.swiper {
+  background-image: url(../public/img/main_bg.png);
+  
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;  
+}
+
+.box2 {
+  width: 60%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: -45px;
+}
+
+.textcontent {
+  font-size: 4em;
+  margin-top: 30px;
+}
+p {
+  font-size: 1.5em;
+}
