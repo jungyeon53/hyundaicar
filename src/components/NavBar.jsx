@@ -32,12 +32,6 @@ function NavBar(){
             </NavDropdown>
             <Nav.Link href="#home">내차사기</Nav.Link>
           </Nav>
-          {/* <div className='d-flex gap-3 me-auto'>
-        <a href='#' className='icons text-dark'><CiSearch /></a>
-        <a href='#' className='icons text-dark'><CiHeart /></a>
-        <a href='#' className='icons text-dark'><CiShoppingCart /></a>
-        <a href='#' className='icons text-dark'><IoPersonOutline /></a>
-        </div> */}
 
           <Offcanvas show={show} onHide={handleClose} className='ms-auto'>
             <Offcanvas.Header closeButton>

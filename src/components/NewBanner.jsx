@@ -21,7 +21,7 @@ function App() {
         }}
         spaceBetween={10}
         navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
+        thumbs={{swiper: thumbsSwiper}}
         modules={[FreeMode, Navigation, Thumbs]}
         className="newSlider"
       >
