@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Inner from './components/inner';
 import Banner from './components/Banner';
 import BannerCar from './components/BannerCar';
+//import NewBanner from './components/NewBanner';
 
 function App() {
   return (
@@ -14,12 +15,11 @@ function App() {
   {/* header */}
     <NavBar />
     <Swiper />
-
     <SwiperCar />
     <Inner />
     <Banner />
     <BannerCar />
-
+    {/* <NewBanner /> */}
     <Footer />
     </div>
   );

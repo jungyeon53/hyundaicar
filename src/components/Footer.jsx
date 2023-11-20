@@ -10,7 +10,7 @@ function Footer(){
                 <Row className='mb-5'>
                     <Col md={6}>
                         <ul className='d-flex justify-content-center justify-content-me-start'>
-                            {/* # : 클릭하면 위로 쭉 올라감 #! 안올락마  */}
+                           
                             <li><a href="#!">Privacy</a></li>
                             <li className='px-3'>/</li>
                             <li><a href="#!">Team</a></li>
