@@ -1,16 +1,17 @@
 .icons {
   font-size: 1.5em;
-  
+
 }
+
 /* swiper */
-.swiper {
+.Banner {
   background-image: url(../public/img/main_bg.png);
-  
+  margin-bottom: 100px;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;  
+  font-size: 18px;
 }
 
 .box2 {
@@ -24,6 +25,79 @@
   font-size: 4em;
   margin-top: 30px;
 }
+
 p {
   font-size: 1.5em;
+}
+
+.CarBanner {
+  margin-top: 50px;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.imgcar {
+  height: 160px;
+}
+
+.box3 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.shop {
+  position: absolute;
+  color: #EDEDED;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 10px;
+  z-index: 0;
+}
+
+.keyword {
+  position: absolute;
+  z-index: 5;
+
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.title {
+  position: relative;
+  height: 100px;
+}
+
+.btn01 {
+  border-radius: 50px;
+  width: 150px;
+  height: 60px;
+}
+
+.bigimg {
+  margin-bottom: 100px;
+}
+.bigBanner {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.center-text {
+  margin-bottom: 30px;
+}
+
+.smallBanner {
+  height: 100px;
+}
+
+.smallimg {
+  width: 80%;
+  height: 100%;
+}
+
+.samllbannertext {
+  margin-bottom: 180px;
+}
+.car-top {
+  margin-bottom: 50px;
 }

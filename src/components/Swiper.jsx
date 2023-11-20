@@ -5,9 +5,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
-
-
 function Modal() {
 
     return(
@@ -25,7 +22,7 @@ function Modal() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         
-      className='swiper'>
+      className='Banner'>
         <SwiperSlide> 
 
         <div className='textcontent'>GRANDEUR</div>
