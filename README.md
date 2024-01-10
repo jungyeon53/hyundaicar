@@ -16,9 +16,11 @@
   <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?&style=for-the-badge&logo=Bootstrap&logoColor=white"/>
 </div>
 
+<div align="center">
 ## 리액트 첫 프로젝트 
 이 프로젝트는 리액트로 만든 첫 프로젝트입니다. <br />
 부트스트랩을 활용하여 반응형을 구현하였고, 스와이프로 슬라이드 배너를 만들었습니다!<br />
 하나의 홈페이지 메인화면을 클론하는 것을 목적으로 구현했습니다.<br />
-감사합니다.
-<br/>
+현대 자동차 웹페이지를 구현하면서 컴포넌트를 부품처럼 생각하고 프로젝트를 부품의 완성본인 것을 배웠습니다. <br />
+또한 1개의 컴포넌트를 제대로 만들어두면 다른 페이지에서 사용과 수정이 용이하다는 것을 알게 되었습니다!<br/>
+</div>
